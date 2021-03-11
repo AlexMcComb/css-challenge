@@ -35,7 +35,6 @@ main .row {
 .box {
   height: 145px;
   text-align: center;
-  padding-top: 30px;
   position: relative;
 }
 
@@ -125,13 +124,13 @@ address {
   }
 
   .header-text {
-    margin: 0 0 20px 35px;
+    margin: 0 0 20px 55px;
     font-size: 24px;
   }
 
-  .last {
+  .last-col {
     float: left;
-    width: 0%;
+    padding: 0;
   }
 
   .last-box {
@@ -156,10 +155,6 @@ address {
 
   .link {
     font-size: 18px;
-  }
-
-  .left-margin {
-    margin-left: 10px;
   }
 
   .map {

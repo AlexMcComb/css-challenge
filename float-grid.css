@@ -47,24 +47,20 @@
 
 /* Mobile defaults */
 .col-4 {
-  width: 65%;
+  width: 66.66%;
 }
 
-.last {
+.last-col {
   float: right;
 }
 
-.first {
-  width: 35%;
+.first-col {
+  width: 33.33%;
 }
 
 /* Non-mobile, grid */
 @media only screen and (min-width: 785px) {
   .col-4 {
-    width: 23%;
-  }
-
-  col-4.last {
-    width: 23%;
+    width: 25%;
   }
 }
