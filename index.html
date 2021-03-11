@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Responsive Grid Challenge</title>
+
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="float-grid.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main role="main">
+      <div class="row">
+        <h4 class="header-text">City - Location Name</h4>
+        <div class="col-4 first">
+          <div class="box grey">
+            <div class="map">Map with Pin</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="text-box">
+              <address>
+                1234 Main St<br />
+                Suite 101<br />
+                Palo Alto, CA 12345<br />
+              </address>
+              <p class="regular-text">
+                Phone:
+                <span class="regular-text semi-bold-large"> 650-123-4567</span>
+              </p>
+              <a href="" class="link">View Map and Directions»</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 last">
+          <div class="box last-box">
+            <div class="text-box left-margin">
+              <p class="regular-text semi-bold">HOURS</p>
+              <p class="regular-text">Monday - Friday</p>
+              <p class="regular-text">9:00 a.m. - 5:00 p.m.</p>
+              <p class="regular-text semi-bold margin">PROVIDES CARE FOR</p>
+              <p class="regular-text">Adults, Pediatrics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h4 class="header-text">City - Location Name</h4>
+        <div class="col-4 first">
+          <div class="box grey">
+            <div class="map">Map with Pin</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="text-box">
+              <address>
+                1234 Main St<br />
+                Suite 101<br />
+                Palo Alto, CA 12345<br />
+              </address>
+              <p class="regular-text">
+                Phone:
+                <span class="regular-text semi-bold-large"> 650-123-4567</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 last">
+          <div class="box last-box">
+            <div class="text-box left-margin">
+              <p class="regular-text semi-bold">HOURS</p>
+              <p class="regular-text">Monday - Tuesday</p>
+              <p class="regular-text">9:00 a.m. - 5:00 p.m.</p>
+              <p class="regular-text">Wednesday - Sunday</p>
+              <p class="regular-text">9:00 a.m. - 5:00 p.m.</p>
+              <p class="regular-text semi-bold margin">PROVIDES CARE FOR</p>
+              <p class="regular-text">Adults, Pediatrics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

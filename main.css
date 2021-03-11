@@ -1,0 +1,172 @@
+:root {
+  --grey: #4d4f53;
+  --light-grey: #c7c4c4;
+  --blue: #027c92;
+}
+
+html,
+body,
+blockquote,
+code,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main {
+  padding-top: 100px;
+}
+
+main .row {
+  margin-bottom: 20px;
+}
+
+.box {
+  height: 145px;
+  text-align: center;
+  padding-top: 30px;
+  position: relative;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  width: 72%;
+  margin: 0 0 15px 15px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.header-text:after {
+  content: "";
+  flex: 1;
+  margin-left: 8px;
+  height: 1px;
+  background-color: var(--light-grey);
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 68px;
+  width: 88px;
+  background-color: var(--grey);
+  color: white;
+}
+
+.text-box {
+  color: var(--grey);
+  text-align: left;
+  position: absolute;
+  max-width: 195px;
+  top: 0;
+  padding-left: 12px;
+}
+
+address {
+  font-size: 15px;
+  line-height: 25px;
+  font-style: normal;
+}
+
+.regular-text {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.semi-bold {
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0;
+  display: block;
+}
+
+.semi-bold-large {
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-block;
+  margin: 8px 0;
+}
+
+.link {
+  color: var(--blue);
+  font-size: 15px;
+  display: block;
+}
+
+.regular-text.semi-bold.margin {
+  margin: 8px 0 0;
+}
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 785px) {
+  .box {
+    height: 160px;
+    min-width: 170px;
+  }
+
+  .text-box {
+    padding-left: 0;
+  }
+
+  .header-text {
+    margin: 0 0 20px 35px;
+    font-size: 24px;
+  }
+
+  .last {
+    float: left;
+    width: 0%;
+  }
+
+  .last-box {
+    float: none;
+  }
+
+  address {
+    font-size: 18px;
+  }
+
+  .regular-text {
+    font-size: 18px;
+  }
+
+  .semi-bold {
+    font-size: 16px;
+  }
+
+  .semi-bold-large {
+    font-size: 18px;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+
+  .left-margin {
+    margin-left: 10px;
+  }
+
+  .map {
+    height: 135px;
+    width: 175px;
+    right: 0;
+    left: auto;
+    transform: none;
+  }
+}
