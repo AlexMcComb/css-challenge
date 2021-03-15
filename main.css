@@ -28,38 +28,25 @@ main {
   padding-top: 100px;
 }
 
-main .row {
+.row {
   margin-bottom: 20px;
 }
 
 .box {
-  height: 145px;
   text-align: center;
-  position: relative;
+  height: auto;
 }
 
 .header-text {
-  display: flex;
-  align-items: center;
-  width: 72%;
-  margin: 0 0 15px 15px;
+  width: 100%;
+  margin-bottom: 15px;
   font-weight: 400;
   font-size: 20px;
-}
-
-.header-text:after {
-  content: "";
-  flex: 1;
-  margin-left: 8px;
-  height: 1px;
-  background-color: var(--light-grey);
+  border-top: 1px solid var(--light-grey);
+  padding-top: 20px;
 }
 
 .map {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
   height: 68px;
   width: 88px;
   background-color: var(--grey);
@@ -69,30 +56,25 @@ main .row {
 .text-box {
   color: var(--grey);
   text-align: left;
-  position: absolute;
-  max-width: 195px;
-  top: 0;
-  padding-left: 12px;
+  padding-left: 20px;
 }
 
 address {
   font-size: 15px;
-  line-height: 25px;
+  line-height: 17px;
   font-style: normal;
 }
 
 .regular-text {
   font-size: 15px;
-  line-height: 25px;
+  line-height: 20px;
   font-weight: 400;
-  display: inline-block;
 }
 
 .semi-bold {
+  margin-top: 8px;
   font-weight: 600;
   font-size: 15px;
-  margin: 0;
-  display: block;
 }
 
 .semi-bold-large {
@@ -109,40 +91,49 @@ address {
 }
 
 .regular-text.semi-bold.margin {
-  margin: 8px 0 0;
+  margin: 5px 0 0;
+}
+
+.hours-container {
+  margin-bottom: 5px;
 }
 
 /* Non-mobile, grid */
-@media only screen and (min-width: 785px) {
-  .box {
-    height: 160px;
-    min-width: 170px;
-  }
-
+@media only screen and (min-width: 641px) {
   .text-box {
     padding-left: 0;
   }
 
   .header-text {
-    margin: 0 0 20px 55px;
+    display: flex;
+    align-items: center;
+    width: 72%;
+    margin-bottom: 20px;
     font-size: 24px;
+    border-top: none;
+    padding-top: 0;
   }
 
-  .last-col {
-    float: left;
-    padding: 0;
+  .header-text:after {
+    content: "";
+    flex: 1;
+    margin-left: 8px;
+    height: 1px;
+    background-color: var(--light-grey);
   }
 
   .last-box {
-    float: none;
+    padding-left: 10px;
   }
 
   address {
     font-size: 18px;
+    line-height: 25px;
   }
 
   .regular-text {
     font-size: 18px;
+    line-height: 25px;
   }
 
   .semi-bold {
@@ -160,8 +151,5 @@ address {
   .map {
     height: 135px;
     width: 175px;
-    right: 0;
-    left: auto;
-    transform: none;
   }
 }
